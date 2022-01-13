@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		D08EBACC2790A4E80050D1C7 /* MrRoomServiceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08EBACB2790A4E80050D1C7 /* MrRoomServiceApp.swift */; };
-		D08EBACE2790A4E80050D1C7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08EBACD2790A4E80050D1C7 /* ContentView.swift */; };
 		D08EBAD02790A4E90050D1C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D08EBACF2790A4E90050D1C7 /* Assets.xcassets */; };
 		D08EBAD32790A4E90050D1C7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D08EBAD22790A4E90050D1C7 /* Preview Assets.xcassets */; };
 		D08EBADD2790A4E90050D1C7 /* MrRoomServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08EBADC2790A4E90050D1C7 /* MrRoomServiceTests.swift */; };
 		D08EBAE72790A4E90050D1C7 /* MrRoomServiceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08EBAE62790A4E90050D1C7 /* MrRoomServiceUITests.swift */; };
 		D08EBAE92790A4E90050D1C7 /* MrRoomServiceUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08EBAE82790A4E90050D1C7 /* MrRoomServiceUITestsLaunchTests.swift */; };
+		D08EBAF62790C3120050D1C7 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08EBAF52790C3120050D1C7 /* WelcomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +36,6 @@
 /* Begin PBXFileReference section */
 		D08EBAC82790A4E80050D1C7 /* MrRoomService.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MrRoomService.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D08EBACB2790A4E80050D1C7 /* MrRoomServiceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MrRoomServiceApp.swift; sourceTree = "<group>"; };
-		D08EBACD2790A4E80050D1C7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D08EBACF2790A4E90050D1C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D08EBAD22790A4E90050D1C7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D08EBAD82790A4E90050D1C7 /* MrRoomServiceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MrRoomServiceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +43,7 @@
 		D08EBAE22790A4E90050D1C7 /* MrRoomServiceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MrRoomServiceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D08EBAE62790A4E90050D1C7 /* MrRoomServiceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MrRoomServiceUITests.swift; sourceTree = "<group>"; };
 		D08EBAE82790A4E90050D1C7 /* MrRoomServiceUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MrRoomServiceUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D08EBAF52790C3120050D1C7 /* WelcomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,7 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				D08EBACB2790A4E80050D1C7 /* MrRoomServiceApp.swift */,
-				D08EBACD2790A4E80050D1C7 /* ContentView.swift */,
+				D08EBAF52790C3120050D1C7 /* WelcomeView.swift */,
 				D08EBACF2790A4E90050D1C7 /* Assets.xcassets */,
 				D08EBAD12790A4E90050D1C7 /* Preview Content */,
 			);
@@ -257,7 +257,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D08EBACE2790A4E80050D1C7 /* ContentView.swift in Sources */,
+				D08EBAF62790C3120050D1C7 /* WelcomeView.swift in Sources */,
 				D08EBACC2790A4E80050D1C7 /* MrRoomServiceApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
