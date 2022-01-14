@@ -10,36 +10,59 @@ import SwiftUI
 struct WelcomeView: View {
     var body: some View {
         ZStack {
-            Image(uiImage: UIImage(named: "landingPage")!)
+            Image(uiImage: UIImage(named: "LandingPage")!)
                 .resizable()
                 .scaledToFit()
-                .overlay(MrRoomServiceView(), alignment: .top)
-                .overlay(ContinueButtonView(), alignment: .bottom)
+                .overlay(DesignerNoteView(), alignment: .bottom)
+            VStack {
+                MrRoomServiceView()
+                ContinueButtonView()
+                
+            }
         }
     }
 }
 
 struct ContinueButtonView: View {
     var body: some View {
-        ZStack {
-            Text("Continue>>>")
-                .fontWeight(.heavy)
-                .foregroundColor(.green)
-                .font(.largeTitle)
-                .padding()
+        Button(action:{
+            // To Do
+        })
+        {   ZStack{
+            HStack {
+                Text("Continue")
+                    .foregroundColor(.purple)
+                    .font(.title)
+                    .fontWeight(.heavy)
+                    .padding()
+                Image(systemName: "arrow.forward.circle")
+                    .resizable()
+                    .tint(.purple)
+                    .frame(width: 40, height: 40)
+            }
+            .frame(width: 400, height: 50)
+            .background(Color("pinkWhite"))
         }
+            
+        }
+    }
+}
+
+struct DesignerNoteView: View {
+    var body: some View {
+        Text("designed by Vishal Bhogal")
+            .frame(width: 425, height: 40, alignment: .center)
+            .background(.blue)
+            .foregroundColor(.white)
     }
 }
 
 struct MrRoomServiceView: View {
     var body: some View {
-        ZStack {
-            Text("Mr. Room Service")
-                .fontWeight(.heavy)
-                .foregroundColor(.white)
-                .font(.largeTitle)
-                .padding(.top, 80.0)
-        }
+        Text("Mr. Room Service")
+            .frame(width: 400, height: 400, alignment: .top)
+            .foregroundColor(.white)
+            .font(.largeTitle)
     }
 }
 
