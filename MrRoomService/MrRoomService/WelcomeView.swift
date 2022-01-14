@@ -28,32 +28,35 @@ struct ContinueButtonView: View {
         Button(action:{
             // To Do
         })
-        {   ZStack{
-            HStack {
+        {
+            HStack(spacing: 180) {
                 Text("Continue")
                     .foregroundColor(.purple)
                     .font(.title)
                     .fontWeight(.heavy)
-                    .padding()
+                    .padding(.trailing)
                 Image(systemName: "arrow.forward.circle")
                     .resizable()
                     .tint(.purple)
                     .frame(width: 40, height: 40)
             }
-            .frame(width: 400, height: 50)
-            .background(Color("pinkWhite"))
         }
-            
-        }
+        .padding()
+        .frame(width: 400, height: 60)
+        .background(LinearGradient(gradient: Gradient(colors: [Color("pinkWhite"), Color("blueWhite")]),
+                                   startPoint: .leading,
+                                   endPoint: .trailing))
+        .cornerRadius(10)
     }
 }
 
 struct DesignerNoteView: View {
     var body: some View {
         Text("designed by Vishal Bhogal")
+            .fontWeight(.heavy)
             .frame(width: 425, height: 40, alignment: .center)
-            .background(.blue)
-            .foregroundColor(.white)
+            .background(Color("pinkWhite"))
+            .foregroundColor(.black)
     }
 }
 
@@ -61,8 +64,8 @@ struct MrRoomServiceView: View {
     var body: some View {
         Text("Mr. Room Service")
             .frame(width: 400, height: 400, alignment: .top)
-            .foregroundColor(.white)
-            .font(.largeTitle)
+            .foregroundColor(Color("yellowWhite"))
+            .font(.system(size: 40, weight: .heavy, design: .rounded))
     }
 }
 
