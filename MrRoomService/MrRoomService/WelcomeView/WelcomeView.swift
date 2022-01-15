@@ -26,24 +26,24 @@ struct WelcomeView: View {
 struct ContinueButtonView: View {
     var body: some View {
         Button(action:{
-            // To Do
+            // To Connect with HotelCardCell
         })
         {
             HStack(spacing: 180) {
                 Text("Continue")
-                    .foregroundColor(.purple)
+                    .foregroundColor(.white)
                     .font(.title)
                     .fontWeight(.heavy)
                     .padding(.trailing)
                 Image(systemName: "arrow.forward.circle")
                     .resizable()
-                    .tint(.purple)
+                    .tint(.black)
                     .frame(width: 40, height: 40)
             }
         }
         .padding()
         .frame(width: 400, height: 60)
-        .background(LinearGradient(gradient: Gradient(colors: [Color("pinkWhite"), Color("blueWhite")]),
+        .background(LinearGradient(gradient: Gradient(colors: [.black, Color("pinkWhite")]),
                                    startPoint: .leading,
                                    endPoint: .trailing))
         .cornerRadius(10)
