@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D07ABB4627933156000564E2 /* HotelCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07ABB4527933156000564E2 /* HotelCardCell.swift */; };
 		D08EBACC2790A4E80050D1C7 /* MrRoomServiceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08EBACB2790A4E80050D1C7 /* MrRoomServiceApp.swift */; };
 		D08EBAD02790A4E90050D1C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D08EBACF2790A4E90050D1C7 /* Assets.xcassets */; };
 		D08EBAD32790A4E90050D1C7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D08EBAD22790A4E90050D1C7 /* Preview Assets.xcassets */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D07ABB4527933156000564E2 /* HotelCardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelCardCell.swift; sourceTree = "<group>"; };
 		D08EBAC82790A4E80050D1C7 /* MrRoomService.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MrRoomService.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D08EBACB2790A4E80050D1C7 /* MrRoomServiceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MrRoomServiceApp.swift; sourceTree = "<group>"; };
 		D08EBACF2790A4E90050D1C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -71,6 +73,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D07ABB442793311A000564E2 /* WelcomeView */ = {
+			isa = PBXGroup;
+			children = (
+				D08EBAF52790C3120050D1C7 /* WelcomeView.swift */,
+			);
+			path = WelcomeView;
+			sourceTree = "<group>";
+		};
+		D07ABB472793317A000564E2 /* Hotel Card */ = {
+			isa = PBXGroup;
+			children = (
+				D07ABB4527933156000564E2 /* HotelCardCell.swift */,
+			);
+			path = "Hotel Card";
+			sourceTree = "<group>";
+		};
 		D08EBABF2790A4E80050D1C7 = {
 			isa = PBXGroup;
 			children = (
@@ -94,8 +112,9 @@
 		D08EBACA2790A4E80050D1C7 /* MrRoomService */ = {
 			isa = PBXGroup;
 			children = (
+				D07ABB472793317A000564E2 /* Hotel Card */,
+				D07ABB442793311A000564E2 /* WelcomeView */,
 				D08EBACB2790A4E80050D1C7 /* MrRoomServiceApp.swift */,
-				D08EBAF52790C3120050D1C7 /* WelcomeView.swift */,
 				D08EBACF2790A4E90050D1C7 /* Assets.xcassets */,
 				D08EBAD12790A4E90050D1C7 /* Preview Content */,
 			);
@@ -258,6 +277,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D08EBAF62790C3120050D1C7 /* WelcomeView.swift in Sources */,
+				D07ABB4627933156000564E2 /* HotelCardCell.swift in Sources */,
 				D08EBACC2790A4E80050D1C7 /* MrRoomServiceApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
