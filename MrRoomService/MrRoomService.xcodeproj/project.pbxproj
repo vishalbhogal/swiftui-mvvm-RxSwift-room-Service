@@ -39,6 +39,7 @@
 /* Begin PBXFileReference section */
 		D0686DE9279473B8000082FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		D0686DEA279479E7000082FB /* DancingScript-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DancingScript-VariableFont_wght.ttf"; sourceTree = "<group>"; };
+		D0686DED2794B438000082FB /* LoginPageForApp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LoginPageForApp.png; sourceTree = "<group>"; };
 		D07ABB4527933156000564E2 /* HotelCardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelCardCell.swift; sourceTree = "<group>"; };
 		D07ABB48279373DF000564E2 /* HotelCardCellDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelCardCellDataModel.swift; sourceTree = "<group>"; };
 		D08EBAC82790A4E80050D1C7 /* MrRoomService.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MrRoomService.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -86,6 +87,14 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
+		D0686DEC2794B3E0000082FB /* App Screenshots */ = {
+			isa = PBXGroup;
+			children = (
+				D0686DED2794B438000082FB /* LoginPageForApp.png */,
+			);
+			path = "App Screenshots";
+			sourceTree = "<group>";
+		};
 		D07ABB442793311A000564E2 /* WelcomeView */ = {
 			isa = PBXGroup;
 			children = (
@@ -126,6 +135,7 @@
 		D08EBACA2790A4E80050D1C7 /* MrRoomService */ = {
 			isa = PBXGroup;
 			children = (
+				D0686DEC2794B3E0000082FB /* App Screenshots */,
 				D0686DE9279473B8000082FB /* Info.plist */,
 				D0686DE82794724D000082FB /* Fonts */,
 				D07ABB472793317A000564E2 /* Hotel Card */,
