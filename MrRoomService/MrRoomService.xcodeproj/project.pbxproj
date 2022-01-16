@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D0686DEB27947B25000082FB /* DancingScript-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D0686DEA279479E7000082FB /* DancingScript-VariableFont_wght.ttf */; };
 		D07ABB4627933156000564E2 /* HotelCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07ABB4527933156000564E2 /* HotelCardCell.swift */; };
+		D07ABB49279373DF000564E2 /* HotelCardCellDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07ABB48279373DF000564E2 /* HotelCardCellDataModel.swift */; };
 		D08EBACC2790A4E80050D1C7 /* MrRoomServiceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08EBACB2790A4E80050D1C7 /* MrRoomServiceApp.swift */; };
 		D08EBAD02790A4E90050D1C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D08EBACF2790A4E90050D1C7 /* Assets.xcassets */; };
 		D08EBAD32790A4E90050D1C7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D08EBAD22790A4E90050D1C7 /* Preview Assets.xcassets */; };
@@ -35,7 +37,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D0686DE9279473B8000082FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		D0686DEA279479E7000082FB /* DancingScript-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DancingScript-VariableFont_wght.ttf"; sourceTree = "<group>"; };
 		D07ABB4527933156000564E2 /* HotelCardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelCardCell.swift; sourceTree = "<group>"; };
+		D07ABB48279373DF000564E2 /* HotelCardCellDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelCardCellDataModel.swift; sourceTree = "<group>"; };
 		D08EBAC82790A4E80050D1C7 /* MrRoomService.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MrRoomService.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D08EBACB2790A4E80050D1C7 /* MrRoomServiceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MrRoomServiceApp.swift; sourceTree = "<group>"; };
 		D08EBACF2790A4E90050D1C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -73,6 +78,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D0686DE82794724D000082FB /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				D0686DEA279479E7000082FB /* DancingScript-VariableFont_wght.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		D07ABB442793311A000564E2 /* WelcomeView */ = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				D07ABB4527933156000564E2 /* HotelCardCell.swift */,
+				D07ABB48279373DF000564E2 /* HotelCardCellDataModel.swift */,
 			);
 			path = "Hotel Card";
 			sourceTree = "<group>";
@@ -112,6 +126,8 @@
 		D08EBACA2790A4E80050D1C7 /* MrRoomService */ = {
 			isa = PBXGroup;
 			children = (
+				D0686DE9279473B8000082FB /* Info.plist */,
+				D0686DE82794724D000082FB /* Fonts */,
 				D07ABB472793317A000564E2 /* Hotel Card */,
 				D07ABB442793311A000564E2 /* WelcomeView */,
 				D08EBACB2790A4E80050D1C7 /* MrRoomServiceApp.swift */,
@@ -252,6 +268,7 @@
 			files = (
 				D08EBAD32790A4E90050D1C7 /* Preview Assets.xcassets in Resources */,
 				D08EBAD02790A4E90050D1C7 /* Assets.xcassets in Resources */,
+				D0686DEB27947B25000082FB /* DancingScript-VariableFont_wght.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,6 +293,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D07ABB49279373DF000564E2 /* HotelCardCellDataModel.swift in Sources */,
 				D08EBAF62790C3120050D1C7 /* WelcomeView.swift in Sources */,
 				D07ABB4627933156000564E2 /* HotelCardCell.swift in Sources */,
 				D08EBACC2790A4E80050D1C7 /* MrRoomServiceApp.swift in Sources */,
@@ -441,6 +459,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"MrRoomService/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MrRoomService/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -469,6 +488,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"MrRoomService/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MrRoomService/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

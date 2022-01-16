@@ -9,46 +9,29 @@ import SwiftUI
 
 struct HotelCardCell: View {
     @State var progressValue: Float = 0.0
+    var hotelCardData: [HotelCard] = HotelCardData.hotelOccupanyDetails
     var body: some View {
-        VStack {
-            LinearGradient(gradient: Gradient(colors: [.black, Color("pinkWhite")]),
-                           startPoint: .leading,
-                           endPoint: .trailing)
-                .frame(width: 420, height: 35)
-            
-            HStack(spacing: 90) {
-                VStack(alignment: .leading, spacing: 10) {
-                    Text("Room No. 201")
-                        .font(.system(size: 30, weight: .bold, design: .serif))
-                        .padding(.bottom)
-                    
-                    Text("Vishal Bhogal")
-                        .font(.system(size: 24, weight: .medium, design: .monospaced))
-                    HStack {
-                        Text("Vacating on:")
-                            .font(.system(size: 18, weight: .regular, design: .default))
-                            .padding(.bottom, 4)
-                        Text("Sunday (29/12)")
-                            .font(.system(size: 18, weight: .semibold, design: .default))
-                            .foregroundColor(.green)
-                            .padding(.bottom, 4)
-                    }
-                }
-                VStack(alignment: .center) {
-                    Text("Items")
-                        .font(.system(size: 30, weight: .bold, design: .serif))
-                        .padding(.bottom)
-                    ProgressBarForItems(progress: self.$progressValue)
-                        .frame(width: 60, height: 60)
-                        .onAppear {
-                            self.progressValue = 0.4
-                        }
-                        .padding(.bottom)
+        NavigationView {
+            NavigationLink(destination: WelcomeView()) {
+                List(hotelCardData, id: \.id) { hotelCardInfo in
+            VStack {
+                LinearGradient(gradient: Gradient(colors: [.black, Color("pinkWhite")]),
+                               startPoint: .leading,
+                               endPoint: .trailing)
+                    .frame(width: 350, height: 25)
+                
+                HStack(spacing: 60) {
+                    CardDataRoomInformation(hotelCardInfo: hotelCardInfo)
+                    CardsDataItemsSection(progressValueForTheCard: hotelCardInfo.progressValue, progressValue: $progressValue)
                 }
             }
-            
-        }
-        .border(.black, width: 1)
+                .border(.black, width: 1)
+            }
+            .navigationBarTitle("Room Details")
+            }
+
+    }
+        
     }
 }
 
@@ -68,6 +51,48 @@ struct ProgressBarForItems: View {
                 .foregroundColor(color)
                 .rotationEffect(Angle(degrees: 270))
                 .animation(.easeInOut(duration: 5), value: self.progress)
+        }
+    }
+}
+
+struct CardDataRoomInformation: View {
+    var hotelCardInfo: HotelCard
+    var body: some View {
+        VStack(alignment: .leading, spacing: 10) {
+            Text("Room no: \(hotelCardInfo.roomNumber)")
+                .font(.system(size: 24, weight: .bold, design: .serif))
+                .padding(.bottom)
+            
+            Text(hotelCardInfo.ownerName)
+                .font(.system(size: 16, weight: .medium, design: .monospaced))
+            HStack {
+                Text("Vacating on:")
+                    .font(.system(size: 14, weight: .regular, design: .default))
+                    .padding(.bottom, 4)
+                Text(hotelCardInfo.dateOfVacating)
+                    .font(.system(size: 14, weight: .semibold, design: .default))
+                    .foregroundColor(hotelCardInfo.colorOfDate)
+                    .padding(.bottom, 4)
+            }
+        }
+    }
+}
+
+struct CardsDataItemsSection: View {
+    var progressValueForTheCard: Float
+    @Binding var progressValue: Float
+    var body: some View {
+        VStack(alignment: .center) {
+            Text("Items")
+                .font(.system(size: 24, weight: .bold, design: .serif))
+                .padding(.top)
+
+            ProgressBarForItems(progress: self.$progressValue)
+                .frame(width: 60, height: 60)
+                .onAppear {
+                    self.progressValue = progressValueForTheCard
+                }
+                .padding(.bottom)
         }
     }
 }
