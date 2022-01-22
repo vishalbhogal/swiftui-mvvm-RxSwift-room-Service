@@ -9,6 +9,7 @@ import SwiftUI
 
 struct WelcomeView: View {
     @State var isButtonTapped: Bool = false
+    @StateObject var hotelCardViewModel = HotelCardViewModel(staysNearHotelService: HotelDetailsInformationService())
     init() {
         UINavigationBar.appearance().backgroundColor = UIColor(Color("vistaraPurple"))
     }
@@ -20,7 +21,7 @@ struct WelcomeView: View {
                                endPoint: .bottom)
                 VStack {
                     MrRoomServiceView()
-                    ContinueButtonView(isActive: self.$isButtonTapped)
+                    ContinueButtonView(isActive: self.$isButtonTapped, hotelCardViewModel: hotelCardViewModel)
                 }
             }
             .navigationBarTitleDisplayMode(.inline)
@@ -42,13 +43,14 @@ struct WelcomeView: View {
 
 struct ContinueButtonView: View {
     @Binding var isActive: Bool
+    var hotelCardViewModel: HotelCardViewModel
     var body: some View {
         VStack(spacing: 20) {
             VStack(spacing: 15) {
                 UserNameView()
                 UserPasswordView()
             }.padding(.horizontal)
-            NavigationLink(destination: HotelCardCell(), isActive: $isActive) {
+            NavigationLink(destination: HotelCardCell(hotelCardViewModel: hotelCardViewModel), isActive: $isActive) {
                 HStack(spacing: 110) {
                     Text("Login and Continue")
                         .lineLimit(1)

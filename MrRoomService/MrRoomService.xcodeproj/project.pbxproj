@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D01DA2CD2799D3ED00B29996 /* HotelCardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01DA2CC2799D3ED00B29996 /* HotelCardViewModel.swift */; };
 		D0686DEB27947B25000082FB /* DancingScript-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D0686DEA279479E7000082FB /* DancingScript-VariableFont_wght.ttf */; };
 		D07ABB4627933156000564E2 /* HotelCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07ABB4527933156000564E2 /* HotelCardCell.swift */; };
-		D07ABB49279373DF000564E2 /* HotelCardCellDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07ABB48279373DF000564E2 /* HotelCardCellDataModel.swift */; };
 		D08EBACC2790A4E80050D1C7 /* MrRoomServiceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08EBACB2790A4E80050D1C7 /* MrRoomServiceApp.swift */; };
 		D08EBAD02790A4E90050D1C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D08EBACF2790A4E90050D1C7 /* Assets.xcassets */; };
 		D08EBAD32790A4E90050D1C7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D08EBAD22790A4E90050D1C7 /* Preview Assets.xcassets */; };
@@ -17,6 +17,14 @@
 		D08EBAE72790A4E90050D1C7 /* MrRoomServiceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08EBAE62790A4E90050D1C7 /* MrRoomServiceUITests.swift */; };
 		D08EBAE92790A4E90050D1C7 /* MrRoomServiceUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08EBAE82790A4E90050D1C7 /* MrRoomServiceUITestsLaunchTests.swift */; };
 		D08EBAF62790C3120050D1C7 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08EBAF52790C3120050D1C7 /* WelcomeView.swift */; };
+		D0D33F3D2799FD6000B11482 /* HotelInformationResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D33F3C2799FD6000B11482 /* HotelInformationResponseModel.swift */; };
+		D0D33F3F279A082500B11482 /* HotelCardInfo.json in Resources */ = {isa = PBXBuildFile; fileRef = D0D33F3E279A082500B11482 /* HotelCardInfo.json */; };
+		D0FDA38527974520009E9A8B /* RxBlocking in Frameworks */ = {isa = PBXBuildFile; productRef = D0FDA38427974520009E9A8B /* RxBlocking */; };
+		D0FDA38727974520009E9A8B /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = D0FDA38627974520009E9A8B /* RxCocoa */; };
+		D0FDA38927974520009E9A8B /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = D0FDA38827974520009E9A8B /* RxRelay */; };
+		D0FDA38B27974520009E9A8B /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = D0FDA38A27974520009E9A8B /* RxSwift */; };
+		D0FDA38D27974520009E9A8B /* RxTest in Frameworks */ = {isa = PBXBuildFile; productRef = D0FDA38C27974520009E9A8B /* RxTest */; };
+		D0FDA39227974A18009E9A8B /* HotelDetailsInformationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FDA39127974A18009E9A8B /* HotelDetailsInformationService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,10 +45,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D01DA2CC2799D3ED00B29996 /* HotelCardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelCardViewModel.swift; sourceTree = "<group>"; };
 		D0686DE9279473B8000082FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		D0686DEA279479E7000082FB /* DancingScript-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DancingScript-VariableFont_wght.ttf"; sourceTree = "<group>"; };
 		D07ABB4527933156000564E2 /* HotelCardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelCardCell.swift; sourceTree = "<group>"; };
-		D07ABB48279373DF000564E2 /* HotelCardCellDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelCardCellDataModel.swift; sourceTree = "<group>"; };
 		D08EBAC82790A4E80050D1C7 /* MrRoomService.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MrRoomService.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D08EBACB2790A4E80050D1C7 /* MrRoomServiceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MrRoomServiceApp.swift; sourceTree = "<group>"; };
 		D08EBACF2790A4E90050D1C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +59,9 @@
 		D08EBAE62790A4E90050D1C7 /* MrRoomServiceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MrRoomServiceUITests.swift; sourceTree = "<group>"; };
 		D08EBAE82790A4E90050D1C7 /* MrRoomServiceUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MrRoomServiceUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		D08EBAF52790C3120050D1C7 /* WelcomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		D0D33F3C2799FD6000B11482 /* HotelInformationResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelInformationResponseModel.swift; sourceTree = "<group>"; };
+		D0D33F3E279A082500B11482 /* HotelCardInfo.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = HotelCardInfo.json; path = ../../../../Downloads/HotelCardInfo.json; sourceTree = "<group>"; };
+		D0FDA39127974A18009E9A8B /* HotelDetailsInformationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelDetailsInformationService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +69,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0FDA38B27974520009E9A8B /* RxSwift in Frameworks */,
+				D0FDA38927974520009E9A8B /* RxRelay in Frameworks */,
+				D0FDA38727974520009E9A8B /* RxCocoa in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +79,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0FDA38D27974520009E9A8B /* RxTest in Frameworks */,
+				D0FDA38527974520009E9A8B /* RxBlocking in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,7 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				D07ABB4527933156000564E2 /* HotelCardCell.swift */,
-				D07ABB48279373DF000564E2 /* HotelCardCellDataModel.swift */,
+				D01DA2CC2799D3ED00B29996 /* HotelCardViewModel.swift */,
 			);
 			path = "Hotel Card";
 			sourceTree = "<group>";
@@ -126,6 +142,8 @@
 		D08EBACA2790A4E80050D1C7 /* MrRoomService */ = {
 			isa = PBXGroup;
 			children = (
+				D0D33F3E279A082500B11482 /* HotelCardInfo.json */,
+				D0FDA38F27974984009E9A8B /* Utilities */,
 				D0686DE9279473B8000082FB /* Info.plist */,
 				D0686DE82794724D000082FB /* Fonts */,
 				D07ABB472793317A000564E2 /* Hotel Card */,
@@ -162,6 +180,23 @@
 			path = MrRoomServiceUITests;
 			sourceTree = "<group>";
 		};
+		D0FDA38F27974984009E9A8B /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				D0FDA39027974991009E9A8B /* StaysNearHotel */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		D0FDA39027974991009E9A8B /* StaysNearHotel */ = {
+			isa = PBXGroup;
+			children = (
+				D0FDA39127974A18009E9A8B /* HotelDetailsInformationService.swift */,
+				D0D33F3C2799FD6000B11482 /* HotelInformationResponseModel.swift */,
+			);
+			path = StaysNearHotel;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -178,6 +213,11 @@
 			dependencies = (
 			);
 			name = MrRoomService;
+			packageProductDependencies = (
+				D0FDA38627974520009E9A8B /* RxCocoa */,
+				D0FDA38827974520009E9A8B /* RxRelay */,
+				D0FDA38A27974520009E9A8B /* RxSwift */,
+			);
 			productName = MrRoomService;
 			productReference = D08EBAC82790A4E80050D1C7 /* MrRoomService.app */;
 			productType = "com.apple.product-type.application";
@@ -196,6 +236,10 @@
 				D08EBADA2790A4E90050D1C7 /* PBXTargetDependency */,
 			);
 			name = MrRoomServiceTests;
+			packageProductDependencies = (
+				D0FDA38427974520009E9A8B /* RxBlocking */,
+				D0FDA38C27974520009E9A8B /* RxTest */,
+			);
 			productName = MrRoomServiceTests;
 			productReference = D08EBAD82790A4E90050D1C7 /* MrRoomServiceTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -250,6 +294,9 @@
 				Base,
 			);
 			mainGroup = D08EBABF2790A4E80050D1C7;
+			packageReferences = (
+				D0FDA38327974520009E9A8B /* XCRemoteSwiftPackageReference "RxSwift" */,
+			);
 			productRefGroup = D08EBAC92790A4E80050D1C7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -266,6 +313,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0D33F3F279A082500B11482 /* HotelCardInfo.json in Resources */,
 				D08EBAD32790A4E90050D1C7 /* Preview Assets.xcassets in Resources */,
 				D08EBAD02790A4E90050D1C7 /* Assets.xcassets in Resources */,
 				D0686DEB27947B25000082FB /* DancingScript-VariableFont_wght.ttf in Resources */,
@@ -293,10 +341,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D07ABB49279373DF000564E2 /* HotelCardCellDataModel.swift in Sources */,
 				D08EBAF62790C3120050D1C7 /* WelcomeView.swift in Sources */,
 				D07ABB4627933156000564E2 /* HotelCardCell.swift in Sources */,
 				D08EBACC2790A4E80050D1C7 /* MrRoomServiceApp.swift in Sources */,
+				D01DA2CD2799D3ED00B29996 /* HotelCardViewModel.swift in Sources */,
+				D0FDA39227974A18009E9A8B /* HotelDetailsInformationService.swift in Sources */,
+				D0D33F3D2799FD6000B11482 /* HotelInformationResponseModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -619,6 +669,45 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D0FDA38327974520009E9A8B /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D0FDA38427974520009E9A8B /* RxBlocking */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D0FDA38327974520009E9A8B /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxBlocking;
+		};
+		D0FDA38627974520009E9A8B /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D0FDA38327974520009E9A8B /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		D0FDA38827974520009E9A8B /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D0FDA38327974520009E9A8B /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+		D0FDA38A27974520009E9A8B /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D0FDA38327974520009E9A8B /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+		D0FDA38C27974520009E9A8B /* RxTest */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D0FDA38327974520009E9A8B /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxTest;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D08EBAC02790A4E80050D1C7 /* Project object */;
 }
