@@ -8,29 +8,34 @@
 import SwiftUI
 
 struct HotelCardCell: View {
+    
     @State var progressValue: Float = 0.0
-    var hotelCardData: [HotelCard] = HotelCardData.hotelOccupanyDetails
+    @State var hotelCardViewModel = HotelCardViewModel(staysNearHotelService: HotelDetailsInformationService())
+    
     var body: some View {
         NavigationView {
             NavigationLink(destination: WelcomeView()) {
-                List(hotelCardData, id: \.id) { hotelCardInfo in
-            VStack {
-                LinearGradient(gradient: Gradient(colors: [.black, Color("pinkWhite")]),
-                               startPoint: .leading,
-                               endPoint: .trailing)
-                    .frame(width: 350, height: 25)
-                
-                HStack(spacing: 60) {
-                    CardDataRoomInformation(hotelCardInfo: hotelCardInfo)
-                    CardsDataItemsSection(progressValueForTheCard: hotelCardInfo.progressValue, progressValue: $progressValue)
+                List(hotelCardViewModel.hotelCardData.hotelInformation, id: \.self) { hotelCardInfo in
+                    VStack {
+                        LinearGradient(gradient: Gradient(colors: [.black, Color("pinkWhite")]),
+                                       startPoint: .leading,
+                                       endPoint: .trailing)
+                            .frame(width: 350, height: 25)
+                        
+                        HStack(spacing: 60) {
+                            CardDataRoomInformation(hotelInfoResponse: hotelCardInfo)
+                            CardsDataItemsSection(progressValueForTheCard: 0.5, progressValue: $progressValue)
+                        }
+                    }
+                    .border(.black, width: 1)
+                }
+                .navigationBarTitle("Room Details")
+                .onAppear {
+                    hotelCardViewModel.getStaysNearHotelRatings()
                 }
             }
-                .border(.black, width: 1)
-            }
-            .navigationBarTitle("Room Details")
-            }
-
-    }
+            
+        }
         
     }
 }
@@ -56,22 +61,22 @@ struct ProgressBarForItems: View {
 }
 
 struct CardDataRoomInformation: View {
-    var hotelCardInfo: HotelCard
+    var hotelInfoResponse: HotelInformation
     var body: some View {
         VStack(alignment: .leading, spacing: 10) {
-            Text("Room no: \(hotelCardInfo.roomNumber)")
+            Text("Room no: \(hotelInfoResponse.residentRoomNo)")
                 .font(.system(size: 24, weight: .bold, design: .serif))
                 .padding(.bottom)
             
-            Text(hotelCardInfo.ownerName)
+            Text(hotelInfoResponse.residentName)
                 .font(.system(size: 16, weight: .medium, design: .monospaced))
             HStack {
                 Text("Vacating on:")
                     .font(.system(size: 14, weight: .regular, design: .default))
                     .padding(.bottom, 4)
-                Text(hotelCardInfo.dateOfVacating)
+                Text(hotelInfoResponse.dateOfVacation)
                     .font(.system(size: 14, weight: .semibold, design: .default))
-                    .foregroundColor(hotelCardInfo.colorOfDate)
+                    .foregroundColor(.green)
                     .padding(.bottom, 4)
             }
         }
@@ -86,7 +91,7 @@ struct CardsDataItemsSection: View {
             Text("Items")
                 .font(.system(size: 24, weight: .bold, design: .serif))
                 .padding(.top)
-
+            
             ProgressBarForItems(progress: self.$progressValue)
                 .frame(width: 60, height: 60)
                 .onAppear {
@@ -99,6 +104,6 @@ struct CardsDataItemsSection: View {
 
 struct ContentViewPreviews: PreviewProvider {
     static var previews: some View {
-        HotelCardCell(progressValue: 0.0)
+        HotelCardCell()
     }
 }
