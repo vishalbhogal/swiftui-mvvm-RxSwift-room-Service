@@ -82,8 +82,9 @@ struct ContinueButtonView: View {
                         .foregroundColor(.green)
                 }
             }
+        }.onAppear {
+            hotelCardViewModel.getStaysNearHotelRatings()
         }
-        
     }
 }
 
@@ -105,12 +106,6 @@ struct MrRoomServiceView: View {
                 .foregroundColor(.white)
                 .fontWeight(.bold)
         }
-    }
-}
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        WelcomeView()
     }
 }
 

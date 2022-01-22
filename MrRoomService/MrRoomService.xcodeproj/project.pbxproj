@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		D01DA2CD2799D3ED00B29996 /* HotelCardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01DA2CC2799D3ED00B29996 /* HotelCardViewModel.swift */; };
+		D048DC64279C9855004A3E09 /* TitilliumWeb-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D048DC63279C9854004A3E09 /* TitilliumWeb-Regular.ttf */; };
+		D048DC66279C9864004A3E09 /* TitilliumWeb-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D048DC65279C9863004A3E09 /* TitilliumWeb-SemiBold.ttf */; };
+		D048DC68279C9871004A3E09 /* TitilliumWeb-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D048DC67279C9871004A3E09 /* TitilliumWeb-Bold.ttf */; };
+		D048DC6A279C9C9E004A3E09 /* PoiretOne-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D048DC69279C9C9E004A3E09 /* PoiretOne-Regular.ttf */; };
+		D048DC6C279CA30D004A3E09 /* Actor-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D048DC6B279CA30D004A3E09 /* Actor-Regular.ttf */; };
 		D0686DEB27947B25000082FB /* DancingScript-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D0686DEA279479E7000082FB /* DancingScript-VariableFont_wght.ttf */; };
 		D07ABB4627933156000564E2 /* HotelCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07ABB4527933156000564E2 /* HotelCardCell.swift */; };
 		D08EBACC2790A4E80050D1C7 /* MrRoomServiceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08EBACB2790A4E80050D1C7 /* MrRoomServiceApp.swift */; };
@@ -46,6 +51,11 @@
 
 /* Begin PBXFileReference section */
 		D01DA2CC2799D3ED00B29996 /* HotelCardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelCardViewModel.swift; sourceTree = "<group>"; };
+		D048DC63279C9854004A3E09 /* TitilliumWeb-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TitilliumWeb-Regular.ttf"; sourceTree = "<group>"; };
+		D048DC65279C9863004A3E09 /* TitilliumWeb-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TitilliumWeb-SemiBold.ttf"; sourceTree = "<group>"; };
+		D048DC67279C9871004A3E09 /* TitilliumWeb-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TitilliumWeb-Bold.ttf"; sourceTree = "<group>"; };
+		D048DC69279C9C9E004A3E09 /* PoiretOne-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PoiretOne-Regular.ttf"; sourceTree = "<group>"; };
+		D048DC6B279CA30D004A3E09 /* Actor-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Actor-Regular.ttf"; sourceTree = "<group>"; };
 		D0686DE9279473B8000082FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		D0686DEA279479E7000082FB /* DancingScript-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DancingScript-VariableFont_wght.ttf"; sourceTree = "<group>"; };
 		D07ABB4527933156000564E2 /* HotelCardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelCardCell.swift; sourceTree = "<group>"; };
@@ -97,6 +107,11 @@
 		D0686DE82794724D000082FB /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				D048DC63279C9854004A3E09 /* TitilliumWeb-Regular.ttf */,
+				D048DC69279C9C9E004A3E09 /* PoiretOne-Regular.ttf */,
+				D048DC67279C9871004A3E09 /* TitilliumWeb-Bold.ttf */,
+				D048DC65279C9863004A3E09 /* TitilliumWeb-SemiBold.ttf */,
+				D048DC6B279CA30D004A3E09 /* Actor-Regular.ttf */,
 				D0686DEA279479E7000082FB /* DancingScript-VariableFont_wght.ttf */,
 			);
 			path = Fonts;
@@ -313,9 +328,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D048DC6C279CA30D004A3E09 /* Actor-Regular.ttf in Resources */,
+				D048DC64279C9855004A3E09 /* TitilliumWeb-Regular.ttf in Resources */,
 				D0D33F3F279A082500B11482 /* HotelCardInfo.json in Resources */,
 				D08EBAD32790A4E90050D1C7 /* Preview Assets.xcassets in Resources */,
+				D048DC68279C9871004A3E09 /* TitilliumWeb-Bold.ttf in Resources */,
 				D08EBAD02790A4E90050D1C7 /* Assets.xcassets in Resources */,
+				D048DC6A279C9C9E004A3E09 /* PoiretOne-Regular.ttf in Resources */,
+				D048DC66279C9864004A3E09 /* TitilliumWeb-SemiBold.ttf in Resources */,
 				D0686DEB27947B25000082FB /* DancingScript-VariableFont_wght.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

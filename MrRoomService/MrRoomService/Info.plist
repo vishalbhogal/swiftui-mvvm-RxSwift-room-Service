@@ -4,7 +4,12 @@
 <dict>
 	<key>UIAppFonts</key>
 	<array>
+		<string>TitilliumWeb-SemiBold.ttf</string>
 		<string>DancingScript-VariableFont_wght.ttf</string>
+		<string>TitilliumWeb-Regular.ttf</string>
+		<string>TitilliumWeb-Bold.ttf</string>
+		<string>PoiretOne-Regular.ttf</string>
+		<string>Actor-Regular.ttf</string>
 	</array>
 </dict>
 </plist>
