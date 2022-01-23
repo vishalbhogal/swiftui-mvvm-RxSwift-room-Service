@@ -12,29 +12,32 @@ struct HotelCardCell: View {
     @State var hotelCardViewModel = HotelCardViewModel(staysNearHotelService: HotelDetailsInformationService())
     @State var isSelectedCard: HotelInformation?
     var body: some View {
-        NavigationView {
-        ZStack {
-            Color.red
                 List(hotelCardViewModel.hotelCardData.hotelInformation, id: \.self) { hotelCardInfo in
-                        VStack {
                             ZStack {
                                 Image(uiImage: UIImage(named: "sampleCardBackground")!)
                                     .resizable()
-                                    .frame(height:185)
-                                    .cornerRadius(15)
+                                    .frame(height:213)
+                                    .cornerRadius(13)
+
                                     
-                            HStack(spacing: 50) {
+                            HStack(spacing: 95) {
                                 CardDataRoomInformation(hotelInfoResponse: hotelCardInfo)
                                 
                                 CardsDataItemsSection(progressValueForTheCard: hotelCardInfo.progressValue, progressValue: $progressValue)
                             }
-                    }
-                        }.sheet(item: $isSelectedCard) { isCardSelected in
-                            WelcomeView()
+                            }
+                            .listRowInsets(EdgeInsets(top: 0, leading: 0, bottom: 10, trailing: 0))
+                            .listRowBackground(Color(hue: 0.677, saturation: 0.161, brightness: 0.834))
+                            .sheet(item: $isSelectedCard) { isCardSelected in
+                            HotelResidentDetailsInfoView()
                         }
                         .onTapGesture {
                             self.isSelectedCard = hotelCardInfo
                         }
+                    
+                }
+                .onAppear{
+                    UITableView.appearance().backgroundColor = UIColor(Color(hue: 0.677, saturation: 0.161, brightness: 0.834))
                     
                 }
                 .navigationBarTitleDisplayMode(.inline)
@@ -52,8 +55,7 @@ struct HotelCardCell: View {
                         }
                     }
                 }
-            }
-            }
+        
 }
 }
 
@@ -80,7 +82,7 @@ struct ProgressBarForItems: View {
 struct CardDataRoomInformation: View {
     var hotelInfoResponse: HotelInformation
     var body: some View {
-        VStack(alignment: .leading, spacing: 15) {
+        VStack(alignment: .leading, spacing: 28) {
             
             Text("Room no: \(hotelInfoResponse.residentRoomNo)")
                 .padding(.bottom)
@@ -120,7 +122,7 @@ struct CardsDataItemsSection: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct HotelResidentDetailsInfoView1_Previews: PreviewProvider {
     static var previews: some View {
         WelcomeView()
     }

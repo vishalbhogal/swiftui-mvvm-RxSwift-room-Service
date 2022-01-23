@@ -55,30 +55,33 @@ struct ContinueButtonView: View {
                     Text("Login and Continue")
                         .lineLimit(1)
                         .foregroundColor(.white)
-                        .font(.system(size: 18, weight: .semibold, design: .monospaced))
+                        .font(.custom("Actor-Regular", size: 25))
                         .padding(.trailing)
+        
                     Image(systemName: "arrow.forward.circle")
                         .resizable()
                         .tint(Color("vistaraPurple"))
                         .frame(width: 35, height: 35)
                 }
-                .padding(12)
-                .background(Color("vistaraYellow"))
+                .padding(14)
+                .background(Color("vistaraYellow").cornerRadius(11))
                 .onTapGesture {
                     self.isActive = true
                 }
             }
             VStack(alignment: .leading, spacing: 40) {
                 Text("This App is developed By Vishal Bhogal as his side gig to explore the worlds of iOS and Swift. Find me at github.com/vishalbhogal.")
-                    .font(.system(size: 17, weight: .light, design: .default))
+                    .font(.custom("Actor-Regular", size: 17))
                     .padding([.top, .horizontal], 20)
                     .foregroundColor(.white)
                 HStack {
                     Text("Last Updated on:")
+                        .font(.custom("TitilliumWeb-Regular", size: 19))
                         .padding(.leading, 20)
                         .foregroundColor(.gray)
                     
                     Text("Jan 17, 2022")
+                        .font(.custom("TitilliumWeb-Regular", size: 19))
                         .foregroundColor(.green)
                 }
             }
@@ -124,7 +127,7 @@ struct UserPasswordView: View {
                     .placeholder(when: password.isEmpty) {
                         Text("Password").foregroundColor(.gray)
                     }
-                    .font(.system(size: 25, design: .monospaced))
+                    .font(.custom("Actor-Regular", size: 25))
                     .padding(.leading, 14)
                     .textInputAutocapitalization(.never)
                     .disableAutocorrection(true)
@@ -153,10 +156,9 @@ struct UserNameView: View {
                     .placeholder(when: userName.isEmpty) {
                         Text("Manager Id").foregroundColor(.gray)
                     }
-                    .font(.system(size: 25, design: .monospaced))
+                    .font(.custom("Actor-Regular", size: 25))
                     .textInputAutocapitalization(.never)
                     .disableAutocorrection(true)
-                    .font(.system(size: 25, design: .monospaced))
                     .textFieldStyle(.plain)
                     .onTapGesture {
                         
@@ -182,4 +184,10 @@ extension View {
                 self
             }
         }
+}
+
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        WelcomeView()
+    }
 }

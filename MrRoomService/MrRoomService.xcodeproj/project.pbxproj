@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		D01DA2CD2799D3ED00B29996 /* HotelCardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01DA2CC2799D3ED00B29996 /* HotelCardViewModel.swift */; };
+		D0489C89279D5D9300A83AF0 /* HotelResidentDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0489C88279D5D9300A83AF0 /* HotelResidentDetailsViewController.swift */; };
+		D0489C8B279D637500A83AF0 /* HotelResidentDetailsInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0489C8A279D637500A83AF0 /* HotelResidentDetailsInfoView.swift */; };
 		D048DC64279C9855004A3E09 /* TitilliumWeb-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D048DC63279C9854004A3E09 /* TitilliumWeb-Regular.ttf */; };
 		D048DC66279C9864004A3E09 /* TitilliumWeb-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D048DC65279C9863004A3E09 /* TitilliumWeb-SemiBold.ttf */; };
 		D048DC68279C9871004A3E09 /* TitilliumWeb-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D048DC67279C9871004A3E09 /* TitilliumWeb-Bold.ttf */; };
@@ -51,6 +53,8 @@
 
 /* Begin PBXFileReference section */
 		D01DA2CC2799D3ED00B29996 /* HotelCardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelCardViewModel.swift; sourceTree = "<group>"; };
+		D0489C88279D5D9300A83AF0 /* HotelResidentDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelResidentDetailsViewController.swift; sourceTree = "<group>"; };
+		D0489C8A279D637500A83AF0 /* HotelResidentDetailsInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelResidentDetailsInfoView.swift; sourceTree = "<group>"; };
 		D048DC63279C9854004A3E09 /* TitilliumWeb-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TitilliumWeb-Regular.ttf"; sourceTree = "<group>"; };
 		D048DC65279C9863004A3E09 /* TitilliumWeb-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TitilliumWeb-SemiBold.ttf"; sourceTree = "<group>"; };
 		D048DC67279C9871004A3E09 /* TitilliumWeb-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TitilliumWeb-Bold.ttf"; sourceTree = "<group>"; };
@@ -104,6 +108,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D0489C87279D5D6700A83AF0 /* HotelResidentDetails */ = {
+			isa = PBXGroup;
+			children = (
+				D0489C88279D5D9300A83AF0 /* HotelResidentDetailsViewController.swift */,
+				D0489C8A279D637500A83AF0 /* HotelResidentDetailsInfoView.swift */,
+			);
+			path = HotelResidentDetails;
+			sourceTree = "<group>";
+		};
 		D0686DE82794724D000082FB /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
@@ -157,6 +170,7 @@
 		D08EBACA2790A4E80050D1C7 /* MrRoomService */ = {
 			isa = PBXGroup;
 			children = (
+				D0489C87279D5D6700A83AF0 /* HotelResidentDetails */,
 				D0D33F3E279A082500B11482 /* HotelCardInfo.json */,
 				D0FDA38F27974984009E9A8B /* Utilities */,
 				D0686DE9279473B8000082FB /* Info.plist */,
@@ -365,6 +379,8 @@
 				D07ABB4627933156000564E2 /* HotelCardCell.swift in Sources */,
 				D08EBACC2790A4E80050D1C7 /* MrRoomServiceApp.swift in Sources */,
 				D01DA2CD2799D3ED00B29996 /* HotelCardViewModel.swift in Sources */,
+				D0489C8B279D637500A83AF0 /* HotelResidentDetailsInfoView.swift in Sources */,
+				D0489C89279D5D9300A83AF0 /* HotelResidentDetailsViewController.swift in Sources */,
 				D0FDA39227974A18009E9A8B /* HotelDetailsInformationService.swift in Sources */,
 				D0D33F3D2799FD6000B11482 /* HotelInformationResponseModel.swift in Sources */,
 			);
