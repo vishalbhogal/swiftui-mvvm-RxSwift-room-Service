@@ -1,0 +1,40 @@
+{
+    "residentInformation": [
+        {
+            "id": 1,
+            "item": "Plates",
+            "quantity": 4,
+            "imageName": "circle.inset.filled"
+        },
+        {
+            "id": 2,
+            "item": "Water Bottles",
+            "quantity": 6,
+            "imageName": "takeoutbag.and.cup.and.straw.fill"
+        },
+        {
+            "id": 3,
+            "item": "Cups",
+            "quantity": 2,
+            "imageName": "cup.and.saucer.fill"
+        },
+        {
+            "id": 4,
+            "item": "Ash Tray",
+            "quantity": 7,
+            "imageName": "flame.fill"
+        },
+        {
+            "id": 5,
+            "item": "Extra Mattress",
+            "quantity": 7,
+            "imageName": "bed.double.fill"
+        },
+        {
+            "id": 6,
+            "item": "Spoons & Forks",
+            "quantity": 7,
+            "imageName": "fork.knife"
+        }
+    ]
+}

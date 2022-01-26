@@ -15,6 +15,10 @@
 		D048DC68279C9871004A3E09 /* TitilliumWeb-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D048DC67279C9871004A3E09 /* TitilliumWeb-Bold.ttf */; };
 		D048DC6A279C9C9E004A3E09 /* PoiretOne-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D048DC69279C9C9E004A3E09 /* PoiretOne-Regular.ttf */; };
 		D048DC6C279CA30D004A3E09 /* Actor-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D048DC6B279CA30D004A3E09 /* Actor-Regular.ttf */; };
+		D05F13FB27A1804E00652ECF /* ResidentInformationResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05F13FA27A1804E00652ECF /* ResidentInformationResponseModel.swift */; };
+		D05F140027A188C800652ECF /* HotelCardInfo.json in Resources */ = {isa = PBXBuildFile; fileRef = D05F13FF27A188C800652ECF /* HotelCardInfo.json */; };
+		D05F140227A1C4AF00652ECF /* residentInformation.json in Resources */ = {isa = PBXBuildFile; fileRef = D05F140127A1C4AF00652ECF /* residentInformation.json */; };
+		D05F140427A1C62600652ECF /* ResidentInformationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05F140327A1C62600652ECF /* ResidentInformationService.swift */; };
 		D0686DEB27947B25000082FB /* DancingScript-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D0686DEA279479E7000082FB /* DancingScript-VariableFont_wght.ttf */; };
 		D07ABB4627933156000564E2 /* HotelCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07ABB4527933156000564E2 /* HotelCardCell.swift */; };
 		D08EBACC2790A4E80050D1C7 /* MrRoomServiceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08EBACB2790A4E80050D1C7 /* MrRoomServiceApp.swift */; };
@@ -25,7 +29,6 @@
 		D08EBAE92790A4E90050D1C7 /* MrRoomServiceUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08EBAE82790A4E90050D1C7 /* MrRoomServiceUITestsLaunchTests.swift */; };
 		D08EBAF62790C3120050D1C7 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08EBAF52790C3120050D1C7 /* WelcomeView.swift */; };
 		D0D33F3D2799FD6000B11482 /* HotelInformationResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D33F3C2799FD6000B11482 /* HotelInformationResponseModel.swift */; };
-		D0D33F3F279A082500B11482 /* HotelCardInfo.json in Resources */ = {isa = PBXBuildFile; fileRef = D0D33F3E279A082500B11482 /* HotelCardInfo.json */; };
 		D0FDA38527974520009E9A8B /* RxBlocking in Frameworks */ = {isa = PBXBuildFile; productRef = D0FDA38427974520009E9A8B /* RxBlocking */; };
 		D0FDA38727974520009E9A8B /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = D0FDA38627974520009E9A8B /* RxCocoa */; };
 		D0FDA38927974520009E9A8B /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = D0FDA38827974520009E9A8B /* RxRelay */; };
@@ -60,6 +63,10 @@
 		D048DC67279C9871004A3E09 /* TitilliumWeb-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TitilliumWeb-Bold.ttf"; sourceTree = "<group>"; };
 		D048DC69279C9C9E004A3E09 /* PoiretOne-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PoiretOne-Regular.ttf"; sourceTree = "<group>"; };
 		D048DC6B279CA30D004A3E09 /* Actor-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Actor-Regular.ttf"; sourceTree = "<group>"; };
+		D05F13FA27A1804E00652ECF /* ResidentInformationResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResidentInformationResponseModel.swift; sourceTree = "<group>"; };
+		D05F13FF27A188C800652ECF /* HotelCardInfo.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = HotelCardInfo.json; sourceTree = "<group>"; };
+		D05F140127A1C4AF00652ECF /* residentInformation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = residentInformation.json; sourceTree = "<group>"; };
+		D05F140327A1C62600652ECF /* ResidentInformationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResidentInformationService.swift; sourceTree = "<group>"; };
 		D0686DE9279473B8000082FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		D0686DEA279479E7000082FB /* DancingScript-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DancingScript-VariableFont_wght.ttf"; sourceTree = "<group>"; };
 		D07ABB4527933156000564E2 /* HotelCardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelCardCell.swift; sourceTree = "<group>"; };
@@ -74,7 +81,6 @@
 		D08EBAE82790A4E90050D1C7 /* MrRoomServiceUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MrRoomServiceUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		D08EBAF52790C3120050D1C7 /* WelcomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		D0D33F3C2799FD6000B11482 /* HotelInformationResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelInformationResponseModel.swift; sourceTree = "<group>"; };
-		D0D33F3E279A082500B11482 /* HotelCardInfo.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = HotelCardInfo.json; path = ../../../../Downloads/HotelCardInfo.json; sourceTree = "<group>"; };
 		D0FDA39127974A18009E9A8B /* HotelDetailsInformationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelDetailsInformationService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -115,6 +121,24 @@
 				D0489C8A279D637500A83AF0 /* HotelResidentDetailsInfoView.swift */,
 			);
 			path = HotelResidentDetails;
+			sourceTree = "<group>";
+		};
+		D05F13F927A17FCE00652ECF /* ResidentInformation */ = {
+			isa = PBXGroup;
+			children = (
+				D05F13FA27A1804E00652ECF /* ResidentInformationResponseModel.swift */,
+				D05F140327A1C62600652ECF /* ResidentInformationService.swift */,
+			);
+			path = ResidentInformation;
+			sourceTree = "<group>";
+		};
+		D05F13FC27A1887B00652ECF /* JSON Files */ = {
+			isa = PBXGroup;
+			children = (
+				D05F140127A1C4AF00652ECF /* residentInformation.json */,
+				D05F13FF27A188C800652ECF /* HotelCardInfo.json */,
+			);
+			path = "JSON Files";
 			sourceTree = "<group>";
 		};
 		D0686DE82794724D000082FB /* Fonts */ = {
@@ -170,8 +194,8 @@
 		D08EBACA2790A4E80050D1C7 /* MrRoomService */ = {
 			isa = PBXGroup;
 			children = (
+				D05F13FC27A1887B00652ECF /* JSON Files */,
 				D0489C87279D5D6700A83AF0 /* HotelResidentDetails */,
-				D0D33F3E279A082500B11482 /* HotelCardInfo.json */,
 				D0FDA38F27974984009E9A8B /* Utilities */,
 				D0686DE9279473B8000082FB /* Info.plist */,
 				D0686DE82794724D000082FB /* Fonts */,
@@ -212,6 +236,7 @@
 		D0FDA38F27974984009E9A8B /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				D05F13F927A17FCE00652ECF /* ResidentInformation */,
 				D0FDA39027974991009E9A8B /* StaysNearHotel */,
 			);
 			path = Utilities;
@@ -344,9 +369,10 @@
 			files = (
 				D048DC6C279CA30D004A3E09 /* Actor-Regular.ttf in Resources */,
 				D048DC64279C9855004A3E09 /* TitilliumWeb-Regular.ttf in Resources */,
-				D0D33F3F279A082500B11482 /* HotelCardInfo.json in Resources */,
+				D05F140227A1C4AF00652ECF /* residentInformation.json in Resources */,
 				D08EBAD32790A4E90050D1C7 /* Preview Assets.xcassets in Resources */,
 				D048DC68279C9871004A3E09 /* TitilliumWeb-Bold.ttf in Resources */,
+				D05F140027A188C800652ECF /* HotelCardInfo.json in Resources */,
 				D08EBAD02790A4E90050D1C7 /* Assets.xcassets in Resources */,
 				D048DC6A279C9C9E004A3E09 /* PoiretOne-Regular.ttf in Resources */,
 				D048DC66279C9864004A3E09 /* TitilliumWeb-SemiBold.ttf in Resources */,
@@ -375,6 +401,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D05F140427A1C62600652ECF /* ResidentInformationService.swift in Sources */,
 				D08EBAF62790C3120050D1C7 /* WelcomeView.swift in Sources */,
 				D07ABB4627933156000564E2 /* HotelCardCell.swift in Sources */,
 				D08EBACC2790A4E80050D1C7 /* MrRoomServiceApp.swift in Sources */,
@@ -382,6 +409,7 @@
 				D0489C8B279D637500A83AF0 /* HotelResidentDetailsInfoView.swift in Sources */,
 				D0489C89279D5D9300A83AF0 /* HotelResidentDetailsViewController.swift in Sources */,
 				D0FDA39227974A18009E9A8B /* HotelDetailsInformationService.swift in Sources */,
+				D05F13FB27A1804E00652ECF /* ResidentInformationResponseModel.swift in Sources */,
 				D0D33F3D2799FD6000B11482 /* HotelInformationResponseModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
