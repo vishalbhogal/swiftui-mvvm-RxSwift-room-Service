@@ -1,0 +1,39 @@
+{
+    "hotelInformation": [
+        {
+            "id": 1,
+            "residentRoomNo": 201,
+            "residentName": "Vishal Bhogal",
+            "dateOfVacation": "Sunday (29/12)",
+            "progressValue": 0.3
+        },
+        {
+            "id": 2,
+            "residentRoomNo": 202,
+            "residentName": "Arnubh Goswami",
+            "dateOfVacation": "Monday (22/2)",
+            "progressValue": 0.7
+        },
+        {
+            "id": 3,
+            "residentRoomNo": 204,
+            "residentName": "Ravish Kumar",
+            "dateOfVacation": "Thursday (9/12)",
+            "progressValue": 0.5
+        },
+        {
+            "id": 4,
+            "residentRoomNo": 205,
+            "residentName": "Prannav Roy",
+            "dateOfVacation": "Tuesday (13/11)",
+            "progressValue": 0.9
+        },
+        {
+            "id": 5,
+            "residentRoomNo": 206,
+            "residentName": "Abhinandan Sekri",
+            "dateOfVacation": "Sunday (26/08)",
+            "progressValue": 0.1
+        }
+    ]
+}
